@@ -13,8 +13,9 @@ ypad = 5
 
 def analyze(filePath):
     # analyze the given image and report the inferences and confidence levels
-    result = detection.infer(filePath)
-    inference = detection.parse(result)
+    #result = detection.infer(filePath)
+    #inference = detection.parse(result)
+    inference = 'replace this'
     confidence = '0.85'
 
     # create and position inference label
@@ -30,6 +31,7 @@ def analyze(filePath):
 
 # creating main tkinter window/toplevel
 master = Tk()
+master.title("MRI Detector")
 
 # select and image from the file explorer
 filePath = askopenfilename()
