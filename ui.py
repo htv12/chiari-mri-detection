@@ -7,16 +7,19 @@ import detection
 # import PIL module
 from PIL import Image, ImageTk
 
+# import json
+import json
+
 
 xpad = 5
 ypad = 5
 
 def analyze(filePath):
     # analyze the given image and report the inferences and confidence levels
-    #result = detection.infer(filePath)
-    #inference = detection.parse(result)
-    inference = 'replace this'
-    confidence = '0.85'
+    dict_result = detection.infer(filePath)
+    str_result = json.dumps(dict_result)
+    inference = detection.str_parse(str_result)
+    confidence = detection.dict_parse(dict_result)
 
     # create and position inference label
     inference = ('Inference: ' + inference)
