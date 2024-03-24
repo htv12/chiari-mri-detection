@@ -1,2 +1,2 @@
 # chiari-mri-detection
-ProfHacks project for detecting Chiari malformation using AI
+ProfHacks project for detecting Chiari Malformation and Syrinx using AI
